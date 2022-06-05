@@ -1,0 +1,16 @@
+<p>禁止在循环中调用 updateView </p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+for (...) {
+  ...
+  getView().updateView();
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+// 可在循环结束后针对修改的数据进行局部刷新。
+for (...) {
+  ...
+}
+getView().updateView();
+</pre>

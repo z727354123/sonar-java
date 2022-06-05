@@ -1,0 +1,13 @@
+{
+  "title": "禁止在循环中使用updateView",
+  "type": "BUG",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "1min"
+  },
+  "tags": [
+    "FormPlugin"
+  ],
+  "defaultSeverity": "Blocker"
+}
