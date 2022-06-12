@@ -5,8 +5,6 @@
 package org.sonar.samples.java.checks;
 
 import org.sonar.check.Rule;
-import org.sonar.java.model.statement.ForEachStatementImpl;
-import org.sonar.java.model.statement.ForStatementTreeImpl;
 import org.sonar.plugins.java.api.IssuableSubscriptionVisitor;
 import org.sonar.plugins.java.api.tree.BaseTreeVisitor;
 import org.sonar.plugins.java.api.tree.BlockTree;
@@ -58,9 +56,9 @@ public class MyFirstCustomCheck extends IssuableSubscriptionVisitor {
       if (statement == null) {
         return;
       }
-      System.out.println("for-------------------start----------------------" + ((ForStatementTreeImpl) tree).getLine());
+      System.out.println("for-------------------start----------------------" + tree.toString());
       statement.accept(updateViewStatementVistor);
-      System.out.println("for-------------------end----------------------" + ((ForStatementTreeImpl) tree).getLine());
+      System.out.println("for-------------------end----------------------" + tree.toString());
     }
 
     @Override
@@ -69,9 +67,9 @@ public class MyFirstCustomCheck extends IssuableSubscriptionVisitor {
       if (statement == null) {
         return;
       }
-      System.out.println("forEach-------------------start----------------------" + ((ForEachStatementImpl) tree).getLine());
+      System.out.println("forEach-------------------start----------------------" + tree.toString());
       statement.accept(updateViewStatementVistor);
-      System.out.println("forEach-------------------end----------------------" + ((ForEachStatementImpl) tree).getLine());
+      System.out.println("forEach-------------------end----------------------" + tree.toString());
     }
 
     @Override
