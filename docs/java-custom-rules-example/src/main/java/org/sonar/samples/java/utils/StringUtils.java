@@ -22,4 +22,10 @@ public final class StringUtils {
     return string != null && !string.isEmpty();
   }
 
+  public static boolean equals(String name, String updateView) {
+    if (name != null && updateView != null) {
+      return name.equals(updateView);
+    }
+    return false;
+  }
 }

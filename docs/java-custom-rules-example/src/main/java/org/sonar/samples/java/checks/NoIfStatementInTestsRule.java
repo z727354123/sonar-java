@@ -65,6 +65,7 @@ public class NoIfStatementInTestsRule extends IssuableSubscriptionVisitor {
       super.visitIfStatement(tree);
     }
 
+
     @Override
     public void visitLambdaExpression(LambdaExpressionTree lambdaExpressionTree) {
       // skip lambdas
