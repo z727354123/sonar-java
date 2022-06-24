@@ -1,0 +1,13 @@
+{
+  "title": "the kd.bos.threads.ThreadPools must to be used",
+  "type": "BUG",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "30min"
+  },
+  "tags": [
+    "module"
+  ],
+  "defaultSeverity": "Blocker"
+}
