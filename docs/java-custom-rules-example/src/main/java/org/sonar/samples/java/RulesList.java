@@ -28,7 +28,7 @@ public final class RulesList {
    */
   public static List<Class<? extends JavaCheck>> getJavaChecks() {
     return Collections.unmodifiableList(Arrays.asList(
-      MyFirstCustomCheck.class, UsingBosPoolExceptOthersRuleCheck.class));
+      MyFirstCustomCheck.class, UsingBosPoolExceptOthersRuleCheck.class, KingdeeTipsRuleCheck.class));
   }
 
   /**

@@ -1,0 +1,14 @@
+<p>kingdee tips rules</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+    String.format(ResManager.loadKDString("您负责的%s状态已更新为%s", "InitPlanServiceHelper_4", "test"), "ewe", "C");
+    String.format(ResManager.loadKDString(" 您负责的%s状态已更新为%s ", "InitPlanServiceHelper_4", "test"), "ewe", "C");
+    String.format(ResManager.loadKDString("您负责的%s状态已更新为%s ", "InitPlanServiceHelper_4", "test"), "ewe", "C");
+    String.format(ResManager.loadKDString(" 您负责的%s状态已更新为%s", "InitPlanServiceHelper_4", "test"), "ewe", "C");
+    String.format(ResManager.loadKDString("您负责\n的%s状态已更新为%s", "InitPlanServiceHelper_4", "test"), "ewe", "C");
+    private static final String TEST_STRING = ResManager.loadKDString("您负责的%s状态已更新为%s", "InitPlanServiceHelper_4", "test");
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+  using kingdee tips rules to deal with the problem:https://developer.kingdee.com/article/241181198498975488?productLineId=29&isKnowledge=2
+</pre>
